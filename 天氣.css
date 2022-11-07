@@ -1,0 +1,120 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(34, 34, 34, 0.9);
+  display: flex;
+}
+
+.map_Area {
+  margin-left: 10px;
+  width: 40vw;
+  height: 100vh;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: RGB(156, 192, 249);
+}
+
+.map_Area > h1 {
+  font-family: "標楷體";
+  letter-spacing: 5px;
+}
+
+svg {
+  width: 100%;
+  height: 90%;
+}
+
+path {
+  stroke: white;
+  fill: rgba(9, 114, 44, 0.9);
+  transition: 1s;
+}
+path:hover {
+  fill: aqua;
+  transform: translate(-5px, -5px);
+}
+
+.card_Area {
+  width: calc(60vw - 10px);
+  height: 100vh;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.click_weather_Card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+.weather_card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_Area img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img_box {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.info {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre_weather_Card {
+  height: 50%;
+  width: 30%;
+  background-color: yellow;
+  margin: 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PRE_CARD {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.block_none {
+  display: none;
+}
+
+.block_display {
+  display: block;
+}/*# sourceMappingURL=天氣.css.map */
